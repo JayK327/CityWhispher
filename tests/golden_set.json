@@ -1,0 +1,162 @@
+[
+  {
+    "id": "golden_001",
+    "lat": 48.8584,
+    "lon": 2.2945,
+    "poi_name": "Eiffel Tower",
+    "category": "historical",
+    "source_facts": {
+      "name": "Eiffel Tower",
+      "category": "historical",
+      "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889 as the centerpiece of the 1889 World's Fair.",
+      "address": "Champ de Mars, Paris, France",
+      "opening_hours": "09:00-23:45 daily",
+      "source_url": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+    },
+    "ideal_script": "Rising nearly 330 meters above Paris, the Eiffel Tower was built by engineer Gustave Eiffel for the 1889 World's Fair. What began as a temporary structure became the city's most beloved landmark, welcoming millions of visitors each year to its iron lattice heights."
+  },
+  {
+    "id": "golden_002",
+    "lat": 51.5007,
+    "lon": -0.1246,
+    "poi_name": "Big Ben",
+    "category": "historical",
+    "source_facts": {
+      "name": "Big Ben",
+      "category": "historical",
+      "description": "Big Ben is the nickname for the Great Bell of the striking clock at the north end of the Palace of Westminster in London. The tower was completed in 1859 and is officially named the Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Queen Elizabeth II in 2012.",
+      "address": "Westminster, London, UK",
+      "opening_hours": "Not open to the public",
+      "source_url": "https://en.wikipedia.org/wiki/Big_Ben"
+    },
+    "ideal_script": "The iconic clock tower at Westminster, officially named the Elizabeth Tower, has marked London's hours since 1859. Its nickname Big Ben actually refers to the great bell inside, whose deep chime has become one of the most recognized sounds in the world."
+  },
+  {
+    "id": "golden_003",
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "poi_name": "Colosseum",
+    "category": "historical",
+    "source_facts": {
+      "name": "Colosseum",
+      "category": "historical",
+      "description": "The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy. Built of travertine limestone, tuff, and brick-faced concrete, it is the largest ancient amphitheatre ever built and is still the largest standing amphitheatre in the world. Construction began under Emperor Vespasian in 72 AD and was completed under his successor Titus in 80 AD.",
+      "address": "Piazza del Colosseo, Rome, Italy",
+      "opening_hours": "09:00-19:00",
+      "source_url": "https://en.wikipedia.org/wiki/Colosseum"
+    },
+    "ideal_script": "The Colosseum stands as Rome's most enduring symbol — an oval amphitheatre completed in 80 AD under Emperor Titus. Built from travertine limestone, it once hosted gladiatorial contests for crowds of fifty thousand. Nearly two thousand years later, it remains the largest ancient amphitheatre ever constructed."
+  },
+  {
+    "id": "golden_004",
+    "lat": 27.1751,
+    "lon": 78.0421,
+    "poi_name": "Taj Mahal",
+    "category": "cultural",
+    "source_facts": {
+      "name": "Taj Mahal",
+      "category": "cultural",
+      "description": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his beloved wife Mumtaz Mahal. The tomb is the centrepiece of a 17-hectare complex.",
+      "address": "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh, India",
+      "opening_hours": "06:00-18:30, closed on Fridays",
+      "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
+    },
+    "ideal_script": "Commissioned in 1632 by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, the Taj Mahal is an ivory-white marble mausoleum on the banks of the Yamuna river. Its perfect symmetry and intricate inlay work have made it one of humanity's most celebrated acts of devotion."
+  },
+  {
+    "id": "golden_005",
+    "lat": 37.9715,
+    "lon": 23.7267,
+    "poi_name": "Acropolis of Athens",
+    "category": "historical",
+    "source_facts": {
+      "name": "Acropolis of Athens",
+      "category": "historical",
+      "description": "The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city of Athens and contains the remains of several ancient buildings of great architectural and historical significance, the most famous being the Parthenon. The word acropolis is from the Greek words akron meaning highest point or extremity, and polis meaning city.",
+      "address": "Athens, Greece",
+      "opening_hours": "08:00-20:00",
+      "source_url": "https://en.wikipedia.org/wiki/Acropolis_of_Athens"
+    },
+    "ideal_script": "Perched on a rocky outcrop above Athens, the Acropolis is an ancient citadel whose name blends the Greek words for highest point and city. Its crown jewel, the Parthenon, has stood for over two and a half thousand years as a monument to classical Greek civilization and democratic ideals."
+  },
+  {
+    "id": "golden_006",
+    "lat": 40.6892,
+    "lon": -74.0445,
+    "poi_name": "Statue of Liberty",
+    "category": "cultural",
+    "source_facts": {
+      "name": "Statue of Liberty",
+      "category": "cultural",
+      "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor. The copper statue, a gift from France to the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Alexandre Gustave Eiffel. The statue was dedicated on October 28, 1886.",
+      "address": "Liberty Island, New York, NY, USA",
+      "opening_hours": "09:30-17:00 daily",
+      "source_url": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+    },
+    "ideal_script": "A gift from France to the United States, the Statue of Liberty was dedicated in October 1886. Designed by sculptor Frédéric Bartholdi with an iron framework engineered by Gustave Eiffel, the copper figure has stood at the entrance of New York Harbor as a symbol of freedom for generations of arriving immigrants."
+  },
+  {
+    "id": "golden_007",
+    "lat": 29.9792,
+    "lon": 31.1342,
+    "poi_name": "Great Pyramid of Giza",
+    "category": "historical",
+    "source_facts": {
+      "name": "Great Pyramid of Giza",
+      "category": "historical",
+      "description": "The Great Pyramid of Giza is the oldest and largest of the pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact. It was built as a tomb for the pharaoh Khufu over a period of about 10 to 20 years around 2560 BC.",
+      "address": "Al Haram, Giza Governorate, Egypt",
+      "opening_hours": "08:00-17:00",
+      "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    },
+    "ideal_script": "Built as a tomb for Pharaoh Khufu around 2560 BC, the Great Pyramid of Giza is the oldest of the Seven Ancient Wonders — and the only one still largely intact. Its construction over an estimated ten to twenty years remains one of the most extraordinary engineering achievements in human history."
+  },
+  {
+    "id": "golden_008",
+    "lat": 35.6586,
+    "lon": 139.7454,
+    "poi_name": "Tokyo Tower",
+    "category": "cultural",
+    "source_facts": {
+      "name": "Tokyo Tower",
+      "category": "cultural",
+      "description": "Tokyo Tower is a communications and observation tower in the Shiba-koen district of Minato, Tokyo, Japan. At 332.9 metres, it is the second-tallest structure in Japan. The structure is an Eiffel Tower-inspired lattice tower that is painted in two colors: international orange and white.",
+      "address": "4 Chome-2-8 Shibakoen, Minato City, Tokyo, Japan",
+      "opening_hours": "09:00-23:00 daily",
+      "source_url": "https://en.wikipedia.org/wiki/Tokyo_Tower"
+    },
+    "ideal_script": "Standing nearly 333 meters above the Minato district, Tokyo Tower was inspired by the Eiffel Tower and painted in its signature orange and white to meet aviation safety requirements. Completed in 1958, it serves as both a communications tower and a beloved observation point over the Tokyo skyline."
+  },
+  {
+    "id": "golden_009",
+    "lat": -22.9519,
+    "lon": -43.2105,
+    "poi_name": "Christ the Redeemer",
+    "category": "cultural",
+    "source_facts": {
+      "name": "Christ the Redeemer",
+      "category": "cultural",
+      "description": "Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. It is 30 metres tall, not including its 8-metre pedestal, and its arms stretch 28 metres wide. The statue was completed in 1931.",
+      "address": "Parque Nacional da Tijuca, Rio de Janeiro, Brazil",
+      "opening_hours": "08:00-19:00 daily",
+      "source_url": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)"
+    },
+    "ideal_script": "Completed in 1931, the Art Deco statue of Christ the Redeemer stands thirty meters tall atop Corcovado mountain, its arms stretching twenty-eight meters wide over Rio de Janeiro. Sculpted by Paul Landowski and engineered by Heitor da Silva Costa, it has become the defining image of this city."
+  },
+  {
+    "id": "golden_010",
+    "lat": 40.4319,
+    "lon": 116.5704,
+    "poi_name": "Great Wall of China",
+    "category": "historical",
+    "source_facts": {
+      "name": "Great Wall of China",
+      "category": "historical",
+      "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups. Several walls were built from as early as the 7th century BC, with selective stretches later joined together by Qin Shi Huang, the first emperor of China.",
+      "address": "Huairou District, Beijing, China",
+      "opening_hours": "07:30-18:00",
+      "source_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+    },
+    "ideal_script": "The Great Wall of China stretches across the ancient northern borders of the empire — a series of fortifications whose construction began as early as the seventh century BC. Emperor Qin Shi Huang connected existing walls into a unified barrier, creating one of the most ambitious construction projects in human history."
+  }
+]
