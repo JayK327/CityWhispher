@@ -1,0 +1,118 @@
+# ── Add this to your existing docker-compose.yml ─────────────────────────────
+# This adds a minimal Airflow setup (scheduler + webserver) to the project.
+# Uses the same PostgreSQL instance as the app (different database).
+#
+# Access Airflow UI: http://localhost:8080
+# Username: admin  Password: admin
+
+version: "3.9"
+
+services:
+  # ── Existing services (already in docker-compose.yml) ─────────────────────
+  db:
+    image: postgis/postgis:15-3.3
+    environment:
+      POSTGRES_DB: citywhisper
+      POSTGRES_USER: cw_user
+      POSTGRES_PASSWORD: cw_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  # ── Airflow-specific PostgreSQL (separate from app db) ──────────────────
+  airflow-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow_user
+      POSTGRES_PASSWORD: airflow_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - airflow_pgdata:/var/lib/postgresql/data
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://cw_user:cw_pass@db:5432/citywhisper
+      REDIS_URL: redis://redis:6379
+      GROQ_API_KEY: ${GROQ_API_KEY}
+    depends_on:
+      - db
+      - redis
+
+  # ── NEW: Airflow services ──────────────────────────────────────────────────
+
+  airflow-init:
+    image: apache/airflow:2.9.1
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow_user:airflow_pass@airflow-db:5432/airflow
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__WEBSERVER__SECRET_KEY: 'citywhisper_secret'
+    depends_on:
+      - airflow-db
+    entrypoint: >
+      bash -c "
+      airflow db upgrade &&
+      airflow users create
+      --username admin
+      --password admin
+      --firstname Admin
+      --lastname User
+      --role Admin
+      --email admin@citywhisper.local
+      "
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - .:/opt/airflow/citywhisper
+
+  airflow-scheduler:
+    image: apache/airflow:2.9.1
+    restart: always
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow_user:airflow_pass@airflow-db:5432/airflow
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      DATABASE_URL: postgresql://cw_user:cw_pass@db:5432/citywhisper
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - airflow-db
+      - airflow-init
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - .:/opt/airflow/citywhisper
+    command: scheduler
+
+  airflow-webserver:
+    image: apache/airflow:2.9.1
+    restart: always
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow_user:airflow_pass@airflow-db:5432/airflow
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__WEBSERVER__SECRET_KEY: 'citywhisper_secret'
+    ports:
+      - "8080:8080"
+    depends_on:
+      - airflow-db
+      - airflow-init
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - .:/opt/airflow/citywhisper
+    command: webserver
+
+volumes:
+  pgdata:
+  airflow_pgdata:
