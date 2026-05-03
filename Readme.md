@@ -4,6 +4,19 @@
 
 A full-stack ML engineering project. Built as a learning project to demonstrate real ML engineering: multi-source data pipelines, prompt engineering, caching, personalization, automated evaluation, and workflow orchestration.
 
+### Chart 1 — Per-Document Metric Heatmap
+<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
+
+### Chart 2 — Score Distributions (6 Metrics)
+<img src="https://github.com/JayK327/CityWhispher/demo/img2.png?raw=true" width="600" height="400"/>
+
+### Chart 3 — Faithfulness vs Answer Relevancy Scatter
+<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
+
+### Chart 4 — Recall@5 Distribution by Retrieval Stage
+<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
+
+
 ---
 
 ## What it does
