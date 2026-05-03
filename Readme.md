@@ -3,19 +3,18 @@
 > GPS coordinates in → enriched POI data → grounded LLM narration → MP3 audio out
 
 A full-stack ML engineering project. Built as a learning project to demonstrate real ML engineering: multi-source data pipelines, prompt engineering, caching, personalization, automated evaluation, and workflow orchestration.
+---
+### Chart 1 — Demo
+<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img1.png" width="600" height="400"/>
 
-### Chart 1 — Per-Document Metric Heatmap
-<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
+### Chart 2 — Pipelines
+<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img2.png" width="600" height="400"/>
 
-### Chart 2 — Score Distributions (6 Metrics)
-<img src="https://github.com/JayK327/CityWhispher/demo/img2.png?raw=true" width="600" height="400"/>
+### Chart 3 — Preferences
+<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img3.png" width="600" height="400"/>
 
-### Chart 3 — Faithfulness vs Answer Relevancy Scatter
-<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
-
-### Chart 4 — Recall@5 Distribution by Retrieval Stage
-<img src="https://github.com/JayK327/CityWhispher/demo/img1.png?raw=true" width="600" height="400"/>
-
+### Chart 4 — About
+<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img4.png" width="600" height="400"/>
 
 ---
 
