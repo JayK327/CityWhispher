@@ -88,6 +88,9 @@ citywhisper/
 │
 ├── dags/
 │   └── poi_sync_dag.py               # Apache Airflow nightly batch DAG
+|
+├── demo/
+│   └── img1.png                      # App demo
 │
 ├── api_client.py                     # Bridge: calls FastAPI or runs standalone
 ├── streamlit_app.py                  # Streamlit entry point
