@@ -4,17 +4,28 @@
 
 A full-stack ML engineering project. Built as a learning project to demonstrate real ML engineering: multi-source data pipelines, prompt engineering, caching, personalization, automated evaluation, and workflow orchestration.
 ---
-### Chart 1 — Demo
-<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img1.png" width="600" height="400"/>
-
-### Chart 2 — Pipelines
-<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img2.png" width="600" height="400"/>
-
-### Chart 3 — Preferences
-<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img3.png" width="600" height="400"/>
-
-### Chart 4 — About
-<img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img4.png" width="600" height="400"/>
+<table>
+  <tr>
+    <td align="center">
+      <b>Chart 1 — Demo</b><br/>
+      <img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img1.png" width="600" height="400"/>
+    </td>
+    <td align="center">
+      <b>Chart 2 — Pipelines</b><br/>
+      <img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img2.png" width="600" height="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Chart 3 — Preferences</b><br/>
+      <img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img3.png" width="600" height="400"/>
+    </td>
+    <td align="center">
+      <b>Chart 4 — About</b><br/>
+      <img src="https://raw.githubusercontent.com/JayK327/CityWhispher/main/demo/img4.png" width="600" height="400"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
